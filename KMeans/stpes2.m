@@ -15,3 +15,7 @@ hold off;
 fprintf('Top eigenvector U(:,1) = %f %f \n', U(1,1), U(2,1));
 
 
+% Project the data onto K = 1 dimension
+K = 1;
+Z = projectData(X_norm, U, K);
+fprintf('Projection of the first example: %f\n', Z(1));
